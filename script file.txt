@@ -1,0 +1,48 @@
+let staffList = [];
+
+function addStaff() {
+    const name = document.getElementById("name").value;
+    const age = document.getElementById("age").value;
+    const qualifications = document.getElementById("qualifications").value;
+    const role = document.getElementById("role").value;
+    const contact = document.getElementById("contact").value;
+
+    const staffInfo = {
+        name,
+        age,
+        qualifications,
+        role,
+        contact
+    };
+
+    staffList.push(staffInfo);
+    displayStaffInfo();
+    clearForm();
+}
+
+function displayStaffInfo() {
+    const staffInfoList = document.getElementById("staffInfoList");
+    staffInfoList.innerHTML = '';
+
+    staffList.forEach((staff, index) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <strong>Name:</strong> ${staff.name}<br>
+            <strong>Age:</strong> ${staff.age}<br>
+            <strong>Qualifications:</strong> ${staff.qualifications}<br>
+            <strong>Role:</strong> ${staff.role}<br>
+            <strong>Contact:</strong> ${staff.contact}<br>
+        `;
+        staffInfoList.appendChild(li);
+    });
+}
+
+function clearForm() {
+    document.getElementById("name").value = '';
+    document.getElementById("age").value = '';
+    document.getElementById("qualifications").value = '';
+    document.getElementById("role").value = '';
+    document.getElementById("contact").value = '';
+}
+
+displayStaffInfo();

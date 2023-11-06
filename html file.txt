@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Information Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Staff Information Management System</h1>
+        <form id="staffForm">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="number" id="age" placeholder="Enter Age" required>
+            <input type="text" id="qualifications" placeholder="Enter Qualifications" required>
+            <input type="text" id="role" placeholder="Enter Role" required>
+            <input type="email<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Information Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Staff Information Management</h1>
+
+    <!-- Form to add new staff -->
+    <div id="addStaffForm" class="form-container">
+        <h2>Add New Staff</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="qualifications">Qualifications:</label>
+            <input type="text" id="qualifications" required>
+
+            <label for="role">Role:</label>
+            <input type="text" id="role" required>
+
+            <label for="contact">Contact:</label>
+            <input type="email" id="contact" required>
+
+            <button onclick="addStaff()">Add Staff</button>
+        </form>
+    </div>
+
+    <!-- Display staff information -->
+    <div id="staffList" class="staff-list-container">
+        <h2>Staff List</h2>
+        <ul id="staffInfoList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+" id="contact" placeholder="Enter Contact Information" required>
+            <button type="button" onclick="addStaff()">Add Staff</button>
+        </form>
+
+        <div id="staffList">
+            <h2>Staff List</h2>
+            <ul id="list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
